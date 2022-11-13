@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="documenten/favicon.ico" type="image/gif" sizes="16x16">
+    <title>Contact</title>
+</head>
+<body>
+     <!--header met navigatie toevoegen-->
+     <header>
+        <nav>
+            <h4>Menu</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobby.html">About Me</a></li>
+                <li><a href="cv.html">Resume</a></li>
+                <li><a href="ervaring.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav> 
+     </header>
+  
+    <!--Social media toevoegen-->
+    <div>
+        <h1>Volg me op</h1>
+        <ul>
+            <li><a href="https://be.linkedin.com/in/katsiaryna-sutkus-331a3b32" title="Connect with me on Linkedin"> <img src="img/linkedin_logo.png" alt="Linkedin logo"></a></li>
+            <li><a href="https://www.facebook.com/katsiaryna.sutkus" title="Like me on Facebook"> <img src="img/facebook_logo.png" alt="Facebook logo"></a></li>
+            <li><a href="https://www.instagram.com/katsiaryna_sutkus/" title="Follow me on Instagram"> <img src="img/instagram_logo.svg" alt="Instagram logo"></a></li>
+        </ul>
+    </div>
+    <!--formulier toevoegen-->
+    <div>
+        <h1>Get in touch — let’s work together!</h1> 
+        <h2>Stuur me een e-mail</h2>
+    </div>
+
+    <div> 
+        <form action="verzenden.php" method="post">
+            <div>
+                <label>Voornaam</label><br>
+                <input type="text" name="voornaam"  placeholder="Uw voornaam" required><br>
+            </div>    
+            <div>
+                <label>Achternaam</label><br>
+                <input type="text" name="achternaam"  placeholder="Uw achternaam" required><br>
+            </div>
+            <div>
+                <label>E-mail</label><br>
+                <input type="email" name="email" placeholder="Uw e-mail" required><br>
+            </div>
+            <div>
+                <label>Service</label> <br>
+                <select name="service" required>
+                    <option value="" selected disabled>Waar ben je in geinteresseerd?</option>
+                    <option value="Programmeren">Programmeren</option>
+                    <option value="Webdesign">Webdesign</option>
+                </select>
+            </div>
+            <div>
+                <label>Message</label><br>
+                <textarea placeholder="How can I help you?"></textarea>
+            </div>
+            <input type="submit" value="Send email">
+    </form>
+    </div>
+        
+<!--Footer toevoegen-->
+        <footer>
+            <div>
+                <a class="top" href="#top">Back to top</a> 
+            </div>
+            <div>
+                <a href="index.html">&copy; 2022 Katsiaryna Sutkus</a>  
+            </div>
+        </footer>
+</body>
+</html>
